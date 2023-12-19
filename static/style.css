@@ -1,0 +1,102 @@
+body{
+    font-family: 'Space Mono', monospace;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* Style the navigation menu */
+.topnav {
+    position: relative;
+}
+  
+/* Hide the links inside the navigation menu */
+.topnav #myLinks {
+    display: none;
+}
+  
+/* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+/* Style the hamburger menu */
+.topnav a.icon {
+    color: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#title_main{
+    text-align: center;
+    font-size: 50px;
+}
+
+#title_sub{
+    text-align: center;
+    font-size: 30px;
+}
+
+#game{
+    border-color: lightgray;
+    border-width: 1cm;
+    border-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+#list{
+    overflow-y: auto;
+}
+
+.content1{
+    background-color: rgba(234, 114, 114, 0.895);
+    border-style: none;
+    height: 120px;
+    width: 300px;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.content2{
+    background-color: rgb(90, 126, 245);
+    border-style: none;
+    height: 120px;
+    width: 300px;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+input{
+    align-self: center;
+}
+#list{
+    align-self: center;
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 15%;
+}
+
+#desc{
+    padding-left: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}

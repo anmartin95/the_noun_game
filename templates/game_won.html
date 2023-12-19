@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="main">
+    <div class="topnav">
+        <a href="#home" class="active"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#how">How to Play</a>
+            <a href="#stats">Statistics</a>
+            <a href="#about">Settings</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="title_main">the noun game</div>
+    <div id="title_sub">/THē/&nbsp;/noun/&nbsp;/ɡām/</div>
+    <div id="game">
+        <div id="message">
+            <h2>Game Won!</h2>
+            <h1>today's noun: {{ currentBestGuess }}</h1>
+        </div>
+    </div>
+    <div id="list">
+        <div id="desc">Previous guesses: </div>
+        <div id="prevGuessList">
+            <table>
+                {% for guess in guesses %}
+                <tr>
+                    <td>{{ guess.content }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
