@@ -1,4 +1,4 @@
-from nltk.corpus import wordnet
+'''from nltk.corpus import wordnet
 # reference: https://www.nltk.org/howto/wordnet.html
 
 def get_nouns():
@@ -13,11 +13,11 @@ def get_nouns():
             if '_' in noun:
                 continue
             nouns.append(noun)
-    return nouns
+    return nouns'''
 
 def get_common_nouns():
     nouns = ["book", "dog", "cat", "bus", "brick", "computer", "thought", "doctor", "coffee", "cup", "caramel", "perfume", "grass", "wood"]
     return nouns
 
-allNouns = get_nouns()
+allNouns = get_common_nouns()
 nounList = get_common_nouns()

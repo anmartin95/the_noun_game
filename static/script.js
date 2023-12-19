@@ -1,5 +1,5 @@
 // Check if game statistics are stored in local storage
-const storedStatistics = JSON.parse(localStorage.getItem('gameStatistics')) || {
+/*const storedStatistics = JSON.parse(localStorage.getItem('gameStatistics')) || {
     guesses: 0,
     wins: 0,
     losses: 0
@@ -12,7 +12,7 @@ function updateStatistics() {
         <p>Wins: ${storedStatistics.wins}</p>
         <p>Losses: ${storedStatistics.losses}</p>
     `;
-}
+}*/
 
 // Example: Increase attempts and wins
 //function makeGuess() {
@@ -27,9 +27,9 @@ function updateStatistics() {
 // }
 
 // Initialize game statistics display
-updateStatistics();
+//updateStatistics();
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+//Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon 
 function toggleHamburger() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -38,3 +38,16 @@ function toggleHamburger() {
       x.style.display = "block";
     }
   }
+
+function toggleFirstGuess(){
+  var x = document.getElementById("guess1").value;
+  console.log(x);
+  if (x === "None") {
+    x.style.display = "none";
+  }
+}
+
+
+
+
+

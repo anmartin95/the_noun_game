@@ -23,17 +23,20 @@
     <div id="title_sub">/THē/&nbsp;/noun/&nbsp;/ɡām/</div>
     <a href="/delete/">delete</a>
     <div id="game">
-        <div id="guess1">
-            {{ currentBestGuess }}
+        <div id="redGuess">
+
+        </div>
+        <div id="blueGuess">
+            <div id="guess1" onload="toggleFirstGuess()">{{ currentBestGuess }}</div>
             <form action="/" method="POST">
                 <input type="text" name="content" id="content" class="content1" autocomplete="off">
             </form>
-        </div>
-        <div id="mid">or</div>
-        <div id="guess2">
-            <form action="/" method="POST">
-                <input type="text" name="content" id="content" class="content2" autocomplete="off">
-            </form>
+            <div id="mid">or</div>
+            <div id="guess2">
+                <form action="/" method="POST">
+                    <input type="text" name="content" id="content" class="content2" autocomplete="off">
+                </form>
+            </div>
         </div>
     </div>
     <div id="list">

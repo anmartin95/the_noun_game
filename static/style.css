@@ -49,9 +49,17 @@ body{
     border-color: lightgray;
     border-width: 1cm;
     border-top: 10%;
+    padding: 50px;
+}
+#blueGuess{
     display: flex;
     justify-content: space-evenly;
-    padding: 50px;
+}
+#mid{
+    display: none;
+}
+#guess2{
+    display: none;
 }
 #list{
     overflow-y: auto;
