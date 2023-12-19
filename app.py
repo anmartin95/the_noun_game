@@ -9,6 +9,7 @@ import random
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SECRET_KEY'] = 'supersecretsessionkey'
 db = SQLAlchemy(app)
 
 # initialize scheduler
