@@ -24,19 +24,15 @@
     <a href="/delete/">delete</a>
     <div id="game">
         <div id="redGuess">
-
-        </div>
-        <div id="blueGuess">
-            <div id="guess1" onload="toggleFirstGuess()">{{ currentBestGuess }}</div>
             <form action="/" method="POST">
-                <input type="text" name="content" id="content" class="content1" autocomplete="off">
+                <input type="text" name="content" id="content" class="content1" autocomplete="off" value="{{currentBestGuess}}">
             </form>
-            <div id="mid">or</div>
-            <div id="guess2">
-                <form action="/" method="POST">
-                    <input type="text" name="content" id="content" class="content2" autocomplete="off">
-                </form>
-            </div>
+        </div>
+        <div id="mid">or</div>
+        <div id="blueGuess">
+            <form action="/" method="POST">
+                <input type="text" name="content" id="content" class="content2" autocomplete="off">
+            </form>
         </div>
     </div>
     <div id="list">

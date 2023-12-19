@@ -39,14 +39,10 @@ function toggleHamburger() {
     }
   }
 
-function toggleFirstGuess(){
-  var x = document.getElementById("guess1").value;
-  console.log(x);
-  if (x === "None") {
-    x.style.display = "none";
-  }
+function submitFirstGuess() {
+  document.getElementById('mid').style.display = "block";
+  document.getElementById('blueGuess').style.display = "block";
 }
-
 
 
 

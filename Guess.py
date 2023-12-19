@@ -31,4 +31,6 @@ class Guess:
         return self.word
         #return f"{self.word}, noun: {self.isNoun}, vector: {self.isInVector}, vector index: {self.vectorIndex}"
 
+        
+
     
